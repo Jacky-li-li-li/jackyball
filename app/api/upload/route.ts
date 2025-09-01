@@ -102,8 +102,6 @@ export async function POST(req: NextRequest) {
   }
 }
 
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-}
+// Route configuration for Next.js App Router
+export const runtime = 'nodejs'
+export const maxDuration = 30

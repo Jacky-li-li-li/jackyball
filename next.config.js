@@ -4,7 +4,7 @@ const nextConfig = {
     domains: ['localhost', 'res.cloudinary.com', 'api.qrserver.com'],
   },
   env: {
-    NEXT_PUBLIC_WECHAT_APP_ID: process.env.WECHAT_APP_ID,
+    NEXT_PUBLIC_WECHAT_APP_ID: process.env.WECHAT_APP_ID || '',
   },
 }
 
