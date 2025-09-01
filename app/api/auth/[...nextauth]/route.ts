@@ -81,7 +81,7 @@ const handler = NextAuth({
     async jwt({ token, user, account }) {
       if (user) {
         token.id = user.id
-        token.openid = user.openid
+        token.openid = (user as any).openid
       }
       return token
     },
